@@ -1,7 +1,6 @@
 import { Component } from 'react';
 import Header from './Header';
 import Footer from './Footer';
-//import Paging from './Paging';
 import PokemonList from '../pokemon/PokemonList';
 import Search from './Search';
 import request from 'superagent';
