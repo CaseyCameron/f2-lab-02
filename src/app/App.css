@@ -1,0 +1,21 @@
+.App {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  background-image: linear-gradient(to left, rgb(102, 240, 102), rgb(197, 231, 197));
+}
+
+.search-options {
+  border-bottom: 1px solid rgb(1, 12, 1);
+  padding: 10px 20px;
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+main {
+  overflow: auto;
+  padding: 20px;
+}

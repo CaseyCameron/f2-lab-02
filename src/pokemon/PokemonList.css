@@ -1,0 +1,16 @@
+.PokemonList {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 10px;
+  list-style: none;
+}
+
+.PokemonList p {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-size: .5rem;
+}

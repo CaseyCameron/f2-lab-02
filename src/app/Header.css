@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@600&display=swap');
+
+.Header {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  background: mediumseagreen;
+  color: white;
+  border-bottom: 1px solid darkseagreen;
+  font-family: 'Antonio', sans-serif;
+}
+
+.logo {
+  width: 100%;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+  text-shadow: 2px 2px #646464;
+}
