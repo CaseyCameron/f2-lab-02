@@ -7,7 +7,6 @@ class PokemonList extends Component {
   
   render() { 
     const { pokemonProp } = this.props;
-    const onPaging = this.props.onPaging;
     return (
       <ul className="PokemonList">
         {pokemonProp.map(item => (
