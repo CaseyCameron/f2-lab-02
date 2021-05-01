@@ -4,7 +4,7 @@ import './Search.css';
 export default class Search extends Component {
   state = {
     search: '',
-    sortField: '',
+    sortField: 'pokemon',
     sortOrder: 'asc',
     perPage: ''
   }
@@ -50,8 +50,7 @@ export default class Search extends Component {
         />
 
         <select name="sortField" value={sortField} onChange={this.handleSortField}>
-          <option value="">sort...</option>
-          <option value="pokemon">by name</option>
+          <option value="">by name</option>
           <option value="type_1">by type</option>
           <option value="shape">by shape</option>
           <option value="ability_1">by ability</option>
@@ -61,6 +60,7 @@ export default class Search extends Component {
         </select>
 
         <select name="sortOrder" value={sortOrder} onChange={this.handleSortOrder}>
+          <option value="">order by</option>
           <option value="asc">ascending</option>
           <option value="desc">descending</option>
         </select>
