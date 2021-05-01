@@ -15,7 +15,7 @@ class App extends Component{
     search: '',
     sortFilter: 'pokemon',
     sortOrder: 'asc',
-    perPage: '',
+    perPage: 25,
     page: 1
   }
 
@@ -43,7 +43,8 @@ class App extends Component{
       search: search, 
       sortFilter: sortField, 
       sortOrder: sortOrder, 
-      perPage: perPage, page: 1 },
+      perPage: perPage, 
+      page: 1 },
     () => this.fetchPokemon()); //anon callback refetches data after setting state
   }
 
