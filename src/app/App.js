@@ -25,7 +25,6 @@ class App extends Component{
 
   async fetchPokemon() {
     const { search, sortFilter, sortOrder, perPage, page } = this.state;
-    console.log('fetch fn:' + page);
     const response = await request
       .get(POKEMON_API_URL) //get our pokemon api
       .query({ 
@@ -34,7 +33,6 @@ class App extends Component{
         direction: sortOrder, 
         perPage: perPage, 
         page: page });
-    console.log(response.body);
     this.setState({ pokemonData: response.body.results }); //write the api data into state
   }
 
@@ -56,7 +54,6 @@ class App extends Component{
   }
   
   handleNextPage = () => {
-    console.log(this.state.page);
     this.setState(
       { page: this.state.page + 1 },
       () => this.fetchPokemon(this.state.page) //when you change the page, give me the new pokemon
@@ -65,7 +62,6 @@ class App extends Component{
 
   render() {
     const { pokemonData, page } = this.state; //get the pokemonData from our state (read from state)
-    console.log('renderzone ' + pokemonData[0]?.pokemon);
     // or const pokemonData = this.state.pokemonData
     return (
       <div className="App">
